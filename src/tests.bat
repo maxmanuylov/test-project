@@ -52,6 +52,6 @@ echo ##teamcity[testFinished name='test4' flowId='0']
 
 echo ##teamcity[testSuiteFinished name='Suite1' flowId='0']
 
-echo some output info
+echo some output info 2
 
 rem echo ##teamcity[buildStatus status='success' flowId='0']
