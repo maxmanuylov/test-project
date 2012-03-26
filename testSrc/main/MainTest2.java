@@ -7,7 +7,7 @@ import java.util.Random;
 @Test
 public class MainTest2 extends BaseTestCase {
     public void test_success() {
-        assertEquals(1, 1);
+        assertEquals(1, 2);
     }
 
     public void test_failure() {
