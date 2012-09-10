@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 @Test
 public abstract class BaseTestCase extends Assert {
     public void test_abstract() {
-        assertEquals(1, 2);
+        assertEquals(1, 1);
     }
 
     public void test_blinking() {
