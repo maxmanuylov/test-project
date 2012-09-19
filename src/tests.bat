@@ -50,6 +50,10 @@ rem @echo ##teamcity[testStdErr name='test4' out='Some error occurred' flowId='0
 rem echo ##teamcity[testFailed name='test4' message='Critical error' flowId='0']
 echo ##teamcity[testFinished name='test4' flowId='0']
 
+echo ##teamcity[testStarted name='comparison-failure' flowId='0']
+echo ##teamcity[testFailed name='comparison-failure' type='comparisonFailure' message='Critical error' expected='package main;|n|nimport org.testng.Assert;|nimport org.testng.annotations.Test;|n|n/**|n * @author Maxim.Manuylov|n *         Date: 3/10/12|n */|n@Test|npublic abstract class BaseTestCase extends Assert {|n    public void test_abstract() {|n        assertEquals(1, 1);|n    }|n|n    public void test_blinking() {|n        assertEquals(System.getProperty("qwerty"), "123");|n    }|n}|n' actual='package main;|n|nimport org.testng.Assert;|nimport org.testng.annotations.Test;|n|n/**|n * @author Maxim.Manuylov|n *         Date: 3/10/12|n */|n@Test|npublic abstract class BaseTestCase extends Assert {|n    public void test_abstract() {|n        assertEquals(1, 2);|n    }|n|n    public void test_blinking() {|n        assertEquals(System.getProperty("qwerty"), "456");|n    }|n}|n' flowId='0']
+echo ##teamcity[testFinished name='comparison-failure' flowId='0']
+
 echo ##teamcity[testSuiteFinished name='Suite1' flowId='0']
 
 echo some output info 24
