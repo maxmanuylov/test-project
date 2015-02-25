@@ -12,7 +12,7 @@ public class MainTest2 extends BaseTestCase {
 
     public void test_failure() {
         fail();
-        // comment4
+        // comment5
     }
 
     @Test(invocationCount = 10)
