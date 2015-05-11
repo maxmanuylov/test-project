@@ -9,7 +9,7 @@ echo ##teamcity[testStarted name='test2' captureStandardOutput='true']some test 
 
 
 echo ##teamcity[testStarted name='test1a']
-echo some info
+echo some info 2
 echo ##teamcity[testFinished name='test1a']
 
 echo ##teamcity[testStarted name='test1c']
